@@ -1,0 +1,85 @@
+* { 
+margin: 0px; 
+padding: 0px;
+ }
+
+body {
+	font-size: 120%;
+	background: #b8b8d6;
+}
+
+#header{
+	width: 100#;
+	height: 150px;
+	background: #e74c3c;
+	color: black;
+        font-size: 150%;
+}
+
+#data{
+	 height: 700px;
+	 background:#B56DE8;
+}
+
+#doctorlogo{
+	background: white;
+	border-radius: 60px;
+}
+
+.header {
+	width: 40%;
+	margin: 50px auto 0px;
+	color: #B56DE8;
+	background: #e9eb8a;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+	padding: 25px;
+}
+
+form, .content {
+	width: 40%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #f1c40f;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.input {
+	margin: 10px 0px 10px 0px;
+}
+
+.input label {
+	display: block;
+	text-align: left;
+	margin: 5px;
+}
+
+.input input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+#user_type {
+	height: 40px;
+	width: 98%;
+	padding: 5px 10px;
+	background: white;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.btn {
+        width: 23%;
+	padding: 16px;
+	font-size: 21px;
+	color: #ff1c24;
+	background: #f5a836;
+	border: none;
+	border-radius: 5px;
+}
