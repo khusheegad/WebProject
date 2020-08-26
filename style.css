@@ -18,7 +18,7 @@ body {
 
 #data{
 	 height: 700px;
-	 background:#B56DE8;
+	 background:lightblue;
 }
 
 #doctorlogo{
@@ -42,6 +42,8 @@ form, .content {
 	padding: 20px;
 	border: 1px solid #f1c40f;
 	background: white;
+	animation-name: example;
+    animation-duration: 10s;
 	border-radius: 0px 0px 10px 10px;
 }
 
@@ -83,3 +85,8 @@ form, .content {
 	border: none;
 	border-radius: 5px;
 }
+
+@keyframes example {
+	from {background-color:orchid;}
+	to {background-color: lightskyblue;}
+  }
