@@ -5,13 +5,13 @@ padding: 0px;
 
 body {
 	font-size: 80%;
-	background: #753a88;
+	background:  #2c3e50;
 }
 
 #header{
 	width: 200#;
 	height: 150px;
-	background: #6dd5ed;
+	background: #004e92;
 	color: black;
         font-size: 150%;
 }
@@ -30,7 +30,7 @@ body {
 	width: 40%;
 	margin: 50px auto 0px;
 	color: #B56DE8;
-	background: #e9eb8a;
+	background: #f1c40f;
 	text-align: center;
 	border-radius: 10px 10px 10px 10px;
 	padding: 25px;
