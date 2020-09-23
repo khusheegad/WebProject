@@ -3,6 +3,39 @@
 <head>
   <title>Register Form</title>
   <link rel="stylesheet" href="style.css">
+  <style>button {
+   transition-duration: 0.4s;
+ }
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ td
+ {font-size: 150%;}
+ button:hover {
+   background-color: #004e92;
+   color: aqua; /* Green */
+   
+ }
+ form{
+    background-color: lightgray;
+ }
+ button
+ {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   color: darkturquoise;
+   font-size: 24px;
+   padding: 14px 40px;}
+   </style>
 </head>
 <body>
    <div id="header">
@@ -88,7 +121,8 @@
     <td><textarea></textarea></td>
    </tr>
   </table>
-  <center><input type="submit"></center>
+  <br>
+  <center><button  type="button"  autofocus >Add Patient</button></center>
  </form>
 </body>
 </html>

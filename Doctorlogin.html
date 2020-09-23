@@ -3,6 +3,25 @@
 <head>
 <title>Doctor Login</title>
 <link rel="stylesheet" href="style.css">
+<style>
+      button {
+  transition-duration: 0.4s;
+}
+a{
+    color: white;
+  }
+
+button:hover {
+  background-color: #004e92;
+  color: aqua; /* Green */
+ 
+}
+button
+{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: darkturquoise;
+  font-size: 24px;
+  padding: 14px 40px;}
+          </style>
 </head>
 <body>
 
@@ -11,7 +30,8 @@
 </center>
 </div>
 
-<form id="data" method="POST" action="doctorlogin.php"><br>
+
+<form id="data" method="POST" action="doctorlogin.php" ><br>
 <center>
 <div class="header">
    <h2>DOCTOR LOGIN</h2>
@@ -26,11 +46,28 @@
       <label>Password</label>
       <input type="password" name="password" id="password" placeholder="Type your Password Here" required="required">
 </div>
-
+<BR>
+      <br>
 <div class="input">
        <button type="submit" class="btn" name="login_btn"><a href="Doctorsection.html">LOGIN</a></button>
 </div>
 </center>
 </form>
+<footer class="container-fluid">
+      <div class="row">
+          <div class="col-md-6">
+              <p class="tnc" style="text-align: center !important;color:gray;">
+                  © 2020 <a style="color: gray;"href="">Terms & Conditions - Privacy Policy</a>
+              </p>
+          </div>
+          <div class="col-md-6 quaffle">
+              <p class="teamline" style="text-align: center !important;color:gray;">
+                  Developed by <a style="color: gray;" href=""><span
+                          style="font-weight: bold;color:gray;">S-K-M</span></a>
+
+              </p>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>

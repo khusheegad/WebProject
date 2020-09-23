@@ -5,7 +5,8 @@ padding: 0px;
 
 body {
 	font-size: 80%;
-	background:  #2c3e50;
+	
+	background: lightgray;
 }
 
 #header{
@@ -17,8 +18,8 @@ body {
 }
 
 #data{
-	 height: 700px;
-	 background:lightblue;
+	 height: 500px;
+	 background:lightgray;
 }
 
 #doctorlogo{
@@ -29,8 +30,8 @@ body {
 .header {
 	width: 40%;
 	margin: 50px auto 0px;
-	color: #B56DE8;
-	background: #f1c40f;
+	color: white;
+	background: #004e92;
 	text-align: center;
 	border-radius: 10px 10px 10px 10px;
 	padding: 25px;
@@ -40,10 +41,10 @@ form, .content {
 	width: 40%;
 	margin: 0px auto;
 	padding: 20px;
-	border: 1px solid #f1c40f;
+	border: 1px solid lightgray;
 	background: white;
 	animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 2s;
 	border-radius: 0px 0px 10px 10px;
 }
 
@@ -78,15 +79,17 @@ form, .content {
 
 .btn {
         width: 23%;
-	padding: 16px;
+	padding: 9px;
 	font-size: 21px;
 	color: #ff1c24;
-	background: #f5a836;
+	background:#004e92;
 	border: none;
 	border-radius: 5px;
 }
 
 @keyframes example {
-	from {background-color:orchid;}
-	to {background-color: lightskyblue;}
+	from {background-color:#004e92;}
+	to {background-color: lightgray;}
   }
+
+  

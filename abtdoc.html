@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Doctors Section</title>
-<link rel="stylesheet" href="style.css">
-<script>
-    function loadXMLDoc() {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                myFunction(this);
-            }
-        };
-        xmlhttp.open("GET",'../xml/patient.xml');
-        xmlhttp.send();
-    }
+    <head>
+        <title>Doctors Section</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+          div{
+            font-size: 200%;
+          }
+          
+          th, td {
+  padding: 15px;
+  text-align: left;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+          table {
+  border-collapse: collapse;
+}
 
-    function myFunction(xml) {
-        var i;
-        var xmlDoc = xml.responseXML;
-        var table = '<thead class="table-primary"><tr><th>Doctor Name</th><th>Specialisation</th></tr></thead>';
-        var x = xmlDoc.getElementsByTagName("CD");
-        for (i = 0; i < x.length; i++) {
-            table += "<tr><td>" +
-                x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-                "</td></tr>";
-        }
-        document.getElementById("demo").innerHTML = table;
-    }
-</script>
-</head>
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  width: 80%;
+}
+
+th, td {
+  color: #004e92;
+  height: 50px;
+}
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #004e92;
+  color: aqua; /* Green */
+  
+}
+button
+{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: darkturquoise;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 14px 40px;}
+          </style>
+        </head>
 <body>
-<div id="header">
-<center><img src="doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Doctor's Section
+    <div id="header">
+        <center><img src="doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Doctor's Section
+        </center>
+        </div>
+        <BR>
+            <BR>    
+        <div>
+            <center>
+<button  type="button"  autofocus onclick="loadXMLDoc()">Doctor Details</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th><center>Doctor's Name</center></th><th><center>Specialist</th></center></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+    
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
 </center>
 </div>
 </body>
