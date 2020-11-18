@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Doctors Section</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <style>
           div{
             font-size: 200%;
@@ -87,7 +87,7 @@ button
     </center> 
     </div>
     <div id="header">
-        <center class="image2"><img src="doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Doctor's Section
+        <center class="image2"><img src="../images/doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Doctor's Section
         </center>
         </div>
         <BR>
@@ -106,7 +106,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.open("GET", "../xml/cd_catalog.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
