@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>button {
+   transition-duration: 0.4s;
+ }
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ td
+ {font-size: 150%;}
+ button:hover {
+   background-color: #004e92;
+   color: aqua; /* Green */
+   
+ }
+ form{
+    background-color: lightgray;
+ }
+ button
+ {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   color: darkturquoise;
+   font-size: 24px;
+   padding: 14px 40px;}
+   </style>
+</head>
+<body>
+   <div id="header">
+      <center><img src="../images/doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Add Patient
+      </center>
+      </div>
+      <form id="data" method="post" action="addpatient.php">
+        <table>
+         <tr>
+          <td>Patient Name :</td>
+          <td><input type="text" name="pname"></td>
+         </tr>
+          <tr>
+          <td>Gender :</td>
+          <td>
+           <input type="radio" name="gender" value="male">Male
+           <input type="radio" name="gender" value="female">Female
+          </td>
+         </tr>
+        <tr>
+          <td>Address :</td>
+          <td><input type="text" name="address"></td>
+         </tr>
+         <tr>
+          <td>Email :</td>
+          <td><input type="email" name="email"></td>
+         </tr>
+      <tr>
+          <td>Phone Number :</td>
+          <td><input type="number" name="pnumber"></td>
+         </tr>
+      <tr>
+          <td>Date Of Birth :</td>
+         <td><input type="date"  name="dob" placeholder="Date"></td>
+           </tr>
+           <tr>
+              <td>Blood Group : </td>>
+              <td> 
+                 <input type="radio" name="bgrp" value="a+">A+
+                 <input type="radio" name="bgrp" value="a-">A-
+                 <input type="radio" name="bgrp" value="b+">B+
+                 <input type="radio" name="bgrp" value="b-">B-
+                 <input type="radio" name="bgrp" value="o+">O+
+                 <input type="radio" name="bgrp" value="o-">O-
+                 <input type="radio" name="bgrp" value="ab+">AB+
+                 <input type="radio" name="bgrp" value="ab-">AB-
+               </td>
+            </tr>
+          <tr>
+          <td>Emergency Contact Name:</td>
+          <td><input type="text" name="ename"></td>
+         </tr>
+      <tr>
+          <td>Relationship :</td>
+          <td><input type="text" name="relationship"></td>
+         </tr>
+      <tr>
+          <td>Emergency Phone Number:</td>
+          <td><input type="text" name="enumber"></td>
+         </tr>
+      <tr>
+          <td>Reason For Registration :</td>
+          <td><input type="text" name="reason"></td>
+         </tr>
+      <tr>
+          <td>Additional Information :</td>
+          <td><input type="text" name="addinfo"></td>
+         </tr>
+      <tr>
+          <td>Doctor Name :</td>
+          <td><input type="text" name="dname"></td>
+         </tr>
+      <tr>
+          <td>Taking Any Medications Currently :</td>
+          <td>
+           <input type="radio" name="yesno" value="yes">Yes
+           <input type="radio" name="yesno" value="no">No
+          </td>
+         </tr>
+      <tr>
+          <td>If Yes, Please List It Here :</td>
+          <td><input type="text" name="info"></td>
+         </tr>
+        </table>  
+  <br>
+  <center>
+     <div class="input">
+        <button  type="submit" class="btn" name="addbtn" autofocus >Add Patient</button>
+      </div>
+</center>
+ </form>
+</body>
+</html>
