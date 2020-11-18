@@ -4,8 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        button {
+        transition-duration: 0.4s;
+      }
+      
+      button:hover {
+        background-color: white;
+        color: aqua; /* Green */
+        
+      }
+      button
+      {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        color: darkturquoise;
+        font-size: 24px;
+        font-family: "Times New Roman", Times, serif;
+        padding: 14px 40px;}
+        a{
+          color: black;
+        }
+        
+      .image1:hover{
+        opacity:0.25;
+      }
+      .image2:hover{
+        color: white;
+      }
+      form{
+    background-color: lightgray;
+ }
+        </style>
 </head>
 <body>
-    
+    <div class="row">
+        <div class="row">
+          <center class="image1">  
+          <div class="column">
+            <a href="https://en.wikipedia.org/wiki/Neuroscience">
+              <img src="https://www.apollohospitals.com/images/coe/neurosciences.png"  alt="Snow" style="width:20%" > </a>
+            </div>
+            </center>
+            <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Cardiology">
+              <img src="https://www.apollohospitals.com/images/coe/heart.png" alt="Forest" style="width:20%" > </a>
+            </div>
+          </center> 
+              <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Gastroenterology">
+              <img src="https://www.apollohospitals.com/images/coe/gastroenterology.png" alt="Mountains" style="width:20%"> </a>
+            </div>
+          </center> <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Preventive_healthcare">
+              <img src="https://www.apollohospitals.com/images/coe/preventive-medicine.png" alt="Mountains" style="width:20%"> </a>
+            </div>
+          </center> <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Orthopedic_surgery">
+              <img src="https://www.apollohospitals.com/images/coe/orthopaedics.png" alt="Mountains" style="width:20%"> </a>
+            </div>
+          </center> <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Bariatric_surgery">
+              <img src="https://www.apollohospitals.com/images/coe/bariatric-surgery.png" alt="Mountains" style="width:20%"> </a>
+            </div>
+          </center> <center class="image1"> 
+            <div class="column">
+              <a href="https://en.wikipedia.org/wiki/Cancer">
+              <img src="https://www.apollohospitals.com/images/coe/cancer-care.png" alt="Mountains" style="width:20%">
+            </a>
+            </div>
+          </center> 
+          </div>
+          <div id="header">
+              <center class="image2"><img src="../images/doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>CONTACT US
+              </center>
+              </div>
+              <BR>
+                  <BR>    
+              <div>
+                  <center>
+    </div>
+    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+        <script type="text/javascript">
+        function ValidateForm(frm) {
+        if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+        if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+        return true; }
+        </script>
+        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0" >
+        <tr> <td>
+        <label for="Name">Name*:</label>
+        </td> <td>
+        <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="PhoneNumber">Phone number:</label>
+        </td> <td>
+        <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="FromEmailAddress">Email address*:</label>
+        </td> <td>
+        <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="Comments">Comments*:</label>
+        </td> <td>
+        <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+        </td> </tr> <tr> <td>
+        * required fields
+        </td> <td>
+        
+        <input name="skip_Submit" type="submit" value="Submit" />
+        <!-- <script src="https://www.100forms.com/js/FORMKEY:U6LHU623RM3U/SEND:my@email.com" type="text/javascript"></script> -->
+        </td> </tr>
+        </table>
+        </form>
 </body>
 </html>
