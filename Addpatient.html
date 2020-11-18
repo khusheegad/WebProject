@@ -75,11 +75,11 @@ div {
       <center><img src="doctor.jpg" height="100" width="100" alt="doctorlogo" id="doctorlogo"><br>Add Patient
       </center>
       </div>
- <form>
+ <form action="result.php" method="get">
   <table>
    <tr>
     <td>Patient Name :</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="name"></td>
    </tr>
     <tr>
     <td>Gender :</td>
@@ -90,19 +90,19 @@ div {
    </tr>
   <tr>
     <td>Address :</td>
-    <td><textarea></textarea></td>
+    <td><textarea type="text" name="address" ></textarea></td>
    </tr>
    <tr>
     <td>Email :</td>
-    <td><input type="email"></td>
+    <td><input type="email" name="email"></td>
    </tr>
 <tr>
     <td>Phone Number :</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="number"></td>
    </tr>
 <tr>
     <td>Date Of Birth :</td>
-   <td><input type="date"  placeholder="Date"></td>
+   <td><input type="date" name="dob"  placeholder="Date"></td>
      </tr>
      <tr>
         <td>Blood Group : </td>>
@@ -155,7 +155,7 @@ div {
    </tr>
   </table>
   <br>
-  <center><button  type="button"  autofocus >Add Patient</button></center>
+  <center><button  type="submit" value="submit"  autofocus >Add Patient</button></center>
  </form>
 </body>
 </html>
